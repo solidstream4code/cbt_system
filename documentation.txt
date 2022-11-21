@@ -1,0 +1,43 @@
+DOCUMENTATION
+
+/********Setting up the database*******************/
+
+Database Name: zakcbt
+
+priviledge:
+	username: zakcbt
+	password: zakcbt
+	(This setting is stored in config.php file in php folder)
+
+Admin logging(for logging into admin portal):
+	username: zakcbt
+	password: zakcbt
+	(Stored in the admin table of zakcbt database)
+
+Sql file:
+	file is available in the db folder. zakcbt.sql. It contains three default tables; "admin", "tests" and pupil_lists.
+
+
+
+/********* Authoring tests **************************/
+
+Functionality available through the admin portal "localhost/zakcbt/admin"
+
+Step 1: Create Test - Enter test setting info (test title, duration etc)
+
+Step 2: Add pupil
+				i. If the list of pupils has been previously registered, you can select from the available registered list of pupils to add to the test
+				ii. If the list of pupils has not been registered. You can register it first by uploading a .csv file of the pupils before continuing to step i.
+
+Step 3: Add Questions to the test (upload a .csv file of the questions. Sample format can be downloaded on the form)
+
+
+
+
+/*********Taking Test *********************************/
+
+1. Log in to take test with the pupil name and examination number as registered for the test.
+
+2. All test which is available to the candidate is displayed.
+
+3. CLick on the test to start test.

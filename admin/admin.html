@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CBT System: Admin</title>
+		<link rel="icon" type="image/jpg" href="../pics/title_icon.jpg" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="../fonts/font-awesome.css">
+		<link rel="stylesheet" href="fonts/font-awesome.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link href="../css/modal.css" rel="stylesheet" />
+    <link href="../css/admin.css" rel="stylesheet" />
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+		<script src="../js/admin.js"></script>
+		<script src="../js/modal.js"></script>
+		<script src="../js/fileuploads.js"></script>
+	</head>
+  <body>
+    <div class="main-wrapper container-fluid">
+      <div class="row sub-cont">
+        <div class="row header">
+          <div class="col-left col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <div class="logo-cont">
+              <img src="../pics/title_icon.jpg" alt="logo" class="logo_img"/>
+            </div>
+            <div class="text-cont">
+              <div class="school-name">
+                Maizube Foundation Integrated School
+              </div>
+              <div class="system-name">
+                COMPUTER BASED TESTING SYSTEM
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row nav">
+          <div class="nav-text col-xs-7 col-sm-9 col-md-9 col-lg-9">Questions Administration Portal</div>
+          <div class="nav-nav col-xs-5 col-sm-3 col-md-3 col-lg-3">
+            <a href="admin.html"><div class="create-test-nav test-nav">Create Test</div></a>
+            <a href="list.html"><div class="view-test-nav test-nav">View Tests</div></a>
+          </div>
+        </div>
+
+        <div class="row body-main-cont">
+          <div class="body-cont-left col-xs-12 col-sm-7 col-md-7 col-lg-7">
+            <div class="create_test_section">
+              <div class="create-test-header">
+                <div class="header-text col-xs-12 col-sm-4 col-md-4 col-lg-4">CREATE TEST</div>
+                <div class="cont-head col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                  <div class="head-create-test active create_test_toggle">Create Test</div>
+                  <div class="head-create-test add_pupil_toggle">Add Pupils</div>
+                  <div class="head-create-test add_quests_toggle">Author Questions</div>
+                </div>
+              </div>
+              <div class='body-create-cont add-details-cont'>
+                <div class="brief">
+                  * Customize the test by specifying the name, subject, class, duration, Number of questions per pupil. All fields should
+                  be properly entered
+                </div>
+                <form class='switching-form'>
+                  <div class="create-cont">
+                      <div class="each-element">
+                        <label for="" class="label"> Enter Test Name </label>
+                        <input type="text" class="test-name input-text required create_test" value="" id="test-name"/>
+                        <p class="each-note">The name of the text can a combination of subject, class and year e.g English_pry4_2009</p>
+                      </div>
+                      <div class="each-element">
+                        <label for="" class="label"> Subject and Class </label>
+                        <div class="half-input col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                          <label for="" class="half-label"> Subject </label>
+                          <input type="text" class="test-subject input-text-half required create_test" value="" id="test-subject"/>
+                        </div>
+                        <div class="half-input col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                          <label for="" class="half-label"> Class </label>
+                          <input type="number" min="1" max="6" class="test-class input-text-half required create_test" value="" id="test-class"/>
+                        </div>
+                          <p class="each-note">The class range from primary one to six. Type in 1 or 2 ... 6 in the class field</p>
+                      </div>
+
+                      <div class="each-element">
+                        <label for="" class="label"> Exam Duration </label>
+                        <div class="half-input col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                          <label for="" class="half-label"> Hour </label>
+                          <input type="number" min="0" max="24"  class="test-hour input-text-half required create_test" id="test-hour" value="" />
+                        </div>
+                        <div class="half-input col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                          <label for="" class="half-label"> Minutes </label>
+                          <input type="number" min="0" max="60" class="test-minute input-text-half required create_test" id="test-minute" value="" />
+                        </div>
+                          <p class="each-note">How long should the test last. Max of 24 hours and Max of 60 minutes</p>
+                      </div>
+
+                      <div class="each-element">
+                        <label for="" class="label"> Question Setting </label>
+                        <div class="half-input">
+                          <label for="" class="half-label"> Number of Questions Per Pupil </label>
+                          <input type="number" min="1" max="500"  class="test-hour input-text-half required create_test" id="question_no" value="" />
+                        </div>
+                          <p class="each-note">Each pupil is expected to be assigned how many questions? Max of 500 and Min of 1</p>
+                      </div>
+                    </div>
+                  <input type="submit" name="" class="submit create_test" value="CREATE TEST">
+                </form>
+              </div>
+							<div class='body-create-cont add-pupils-cont'>
+                <div class="brief">
+                  *Add pupils to a test
+                </div>
+								<div class="list_name_value" list_name = "" style="display:none"></div>
+                <form class='switching-form'>
+                  <div class="create-cont switch-add-pupil">
+										<div class="add_pupils_to_test">
+											<div class="each-element">
+	                      <label for="" class="label"> Select test </label>
+												<select class="test_id_select select_input input-text">
+													<option value=""> </option>
+												</select>
+	                    </div>
+											<div class="each-element">
+												<label for="" class="label"> Select list of pupil </label>
+												<select class="list_id_select select_input input-text">
+													<option value=""> </option>
+												</select>
+												<p class="each-note"> If pupil list for a class is not listed. <a class="add_pupil_to_system"><span class="fa fa-plus"></span> Add list to the system</p></a>
+	                    </div>
+											 <button class='choose-file add_pupil'>Add pupils to Test</button>
+										</div>
+										<div class="add_pupils_to_system">
+											<div class="each-element">
+	                      <label for="" class="label"> Select Class</label>
+												<select class="pupils_list_name input-text" id="" value="" />
+													<option></option>
+												</select>
+	                      <p class="each-note">If the selected class has been previously populated. submittting new list will overwrite the previous names</p>
+	                    </div>
+											<div class="each-element">
+	                      <label for="" class="label"> Upload a pupils list (.csv) </label>
+	                      <div class='file-cont'>
+
+	                      </div>
+	                      <button class='choose-file sel-pupil'>Choose File</button>
+	                      <p class="each-note">The uploaded list should be a .csv file. <a href="../pics/sample1.csv" download><span class="fa fa-download"></span> Download sample file</a></p>
+	                    </div>
+										</div>
+                  </div>
+									<input type="file" class="hidden-pupils" value="" accept=".csv" style="display:none" id="hiddden-pupils"/>
+                  <input type="submit" name="" class="submit upload-pupils" value="UPLOAD PUPILS">
+                </form>
+              </div>
+							<div class='body-create-cont add-quests-cont'>
+                <div class="brief">
+                  * Upload a file containing the test questions
+                </div>
+								<div class="test_id_quest_hidden" test_id="" style="display:none"></div>
+                <form class='switching-form'>
+                  <div class="create-cont switch-add-question">
+										<div class="each-element">
+                      <label for="" class="label"> Select Exam to add question </label>
+                      <select class="test_id_quest select_input input-text">
+												<option value=""> </option>
+											</select>
+                    </div>
+
+                    <div class="each-element">
+                      <label for="" class="label"> Upload a Question file (.csv) </label>
+                      <div class='file-cont'>
+
+                      </div>
+                      <button class='choose-file sel-quest'>Choose File</button>
+                      <p class="each-note">The uploaded list should be a .csv file. <a href="../pics/sample2.csv" download><span class="fa fa-download"></span> Download sample file</a></p>
+                    </div>
+                  </div>
+									<input type="file" class="hidden-questions" value="" accept=".csv" style="display:none" id="hidden-questions"/>
+                  <input type="submit" name="" class="submit upload-questions" value="UPLOAD QUESTIONS">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="body-cont-right col-xs-12 col-sm-5 col-md-5 col-lg-5">
+            <div class="row right-sub">
+                <div class="total round-div">
+									<a href="list.html?cat=all">
+	                  <div class="fa fa-briefcase total-icon"></div>
+	                  <div class="label-total label-right">Total Tests</div>
+	                  <div class="label-avail count_all">50</div>
+									</a>
+                </div>
+                <div class="avail round-div">
+									<a href="list.html?cat=active">
+	                  <div class="fa fa-check-circle-o total-icon"></div>
+	                  <div class=" label-right">Active Tests</div>
+	                  <div class="label-avail count_active">17</div>
+									</a>
+                </div>
+            </div>
+            <div class='help'>
+              <div class="help-head">
+                Adding a test is in four compulsory phases
+              </div>
+              <div class="step">
+                <span class="fa fa-database step-icon"> </span><span class="step-head"> Creating the test </span>
+                <p class="help-intro"> Supply the test information and settings </p>
+              </div>
+              <div class="step">
+                <span class="fa fa-user-plus step-icon"> </span><span class="step-head"> Adding pupils to test </span>
+                <p class="help-intro"> Upload a list (csv) of pupils to participate in the test </p>
+              </div>
+              <div class="step">
+                <span class="fa fa-pencil-square-o step-icon"> </span><span class="step-head"> Authoring the Questions </span>
+                <p class="help-intro"> Upload a file of questions for the test</p>
+              </div>
+              <div class="step">
+                <span class="fa fa-cog step-icon"> </span><span class="step-head"> Activate the test </span>
+                <p class="help-intro"> Activate the test when its time to begin the test. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+.main-wrapper{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-image: url("../pics/index_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-cont{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(250, 250, 250, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+.header{
+  background-color: green;
+  height: 60px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.text-cont{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.school-name{
+  color: white;
+  font-size: 12pt;
+  font-weight: bolder;
+  font-family: 'Indie Flower', cursive;
+}
+
+.system-name{
+  font-weight: bolder;
+}
+
+.logo-cont{
+  position: relative;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.logo_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.nav{
+  background-color: rgba(0, 70, 0, 0.7);
+  padding: 5px;
+  border-bottom: 2px solid black;
+  margin: 0px;
+}
+
+.nav-nav{
+  float: right;
+}
+
+.test-nav{
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.test-nav:hover{
+  color: black;
+  font-weight: bolder;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.nav-text{
+  color: white;
+  padding-left: 25px;
+  padding-top: 5px;
+  font-size: 14pt;
+}
+
+.create_test_section{
+  background-color: rgba(250, 250, 250, 0.8);
+  margin: 10px auto;
+  float: left;
+  width: 90%;
+}
+
+.cont-head{
+  background-color: black;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.head-create-test{
+  display: inline-block;
+  width: 32.75%;
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+
+.active{
+  background-color: rgb(0, 0, 100);
+}
+
+.header-text{
+  color: blue;
+  font-size: 16pt;
+  font-weight: bolder;
+}
+
+.body-create-cont{
+  position: relative;
+  top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+}
+
+.brief{
+  font-size: 8pt;
+  margin-bottom: 20px;
+  position: relative;
+  top: -20px;
+  color: brown;
+}
+
+.each-element{
+  margin-bottom: 25px;
+  background-color: rgba(220, 220, 220, 0.9);
+  padding: 15px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.label{
+  display: block;
+  text-align:left;
+  font-size: 10pt;
+  padding: 0px;
+  color: rgba(0, 0, 100, 0.5);
+  margin-bottom: 15px;
+}
+
+.half-label{
+  display: block;
+  text-align: center;
+  font-size: 9pt;
+}
+
+.half-input{
+  display: inline-block;
+  padding: 0px;
+}
+
+.input-text{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+
+.input-text:active{
+  border: 1px solid blue;
+}
+
+.each-note{
+  font-size: 8pt;
+  color: rgba(100, 100, 100);
+  display: block;
+}
+
+.input-text-half{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  margin-right: 10%;
+}
+
+.submit{
+  background-color: green;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px black;
+  border: 1px solid green;
+  color: white;
+  font-size: 14pt;
+}
+
+.right-sub{
+  width: 100%;
+  float: right;
+  margin-top: 30px;
+}
+
+.round-div{
+  background-color: green;
+  height: 170px;
+  width: 170px;
+  font-size: 15pt;
+  margin: 30px;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  font-weight: lighter;
+  box-shadow: 3px 3px 2px black;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.round-div:hover{
+  background-color: white;
+  box-shadow: 3px 2px 3px black inset;
+  border: 1px solid black;
+}
+
+.total-icon{
+  color: rgb(0, 0, 100);
+  font-size: 40pt;
+  margin-bottom: 15px;
+}
+
+.label-avail{
+  color: rgb(0, 0, 100);
+  font-size: 25pt;
+}
+
+.help{
+  position: absolute;
+  top: 280px;
+  text-align: center;
+}
+
+.select_input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: 20px;
+}
+
+.add_pupil_to_system{
+  color: red;
+  cursor: pointer;
+}
+
+option{
+  padding: 10px !important;
+}
+
+@media (max-width: 1124px){
+  .help{
+    position: absolute;
+    top: 500px;
+    text-align: center;
+  }
+}
+
+.help-head{
+  font-size: 20pt;
+}
+
+.step{
+  margin: 40px;
+  font-size: 12pt;
+}
+
+.step-head{
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.file-cont{
+  height: 150px;
+  border: 1px solid blue;
+  width: 150px;
+  margin: 10px auto;
+}
+
+.choose-file{
+  width: 24%;
+  margin: 0px 38%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 760px){
+  .main-wrapper{
+    padding: 5px;
+  }
+
+  .col-left{
+    padding-left: 10px;
+  }
+
+  .header{
+    height: 70px;
+    padding: 0px;
+    padding-top: 15px;
+    margin: 0px;
+  }
+
+  .text-cont{
+    margin-left: 3px;
+  }
+
+  .school-name{
+    font-size: 8pt;
+  }
+
+  .system-name{
+    font-size: 9pt;
+  }
+
+  .logo-cont{
+    top: -7px;
+  }
+
+  .nav{
+    padding: 0px;
+    border-bottom: 2px solid black;
+    margin: 0px;
+  }
+
+  .nav-nav{
+    float: right;
+    padding: 0px;
+  }
+
+  .test-nav{
+    width: 48%;
+    padding: 5px;
+    font-size: 8pt;
+    border: 1px solid black;
+  }
+
+  .nav-text{
+    padding-left: 10px;
+    font-size: 9pt;
+  }
+
+  .create_test_section{
+    width: 100%;
+  }
+
+  .head-create-test{
+    width: 32%;
+    padding: 5px;
+    font-size: 9pt;
+  }
+
+  .header-text{
+    font-size: 14pt;
+  }
+
+  .body-create-cont{
+    top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+  }
+
+  .brief{
+    margin-bottom: 10px;
+  }
+
+  .right-sub{
+    display: none;
+  }
+
+  .help{
+    position: absolute;
+    top: 60px;
+    text-align: center;
+  }
+
+  .help-head{
+    font-size: 20pt;
+    margin-left: -10px;
+  }
+
+  .step{
+    margin: 40px;
+    font-size: 12pt;
+    margin-left: 20px;
+  }
+
+  .step-head{
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+
+  .file-cont{
+    height: 180px;
+    width: 200px;
+  }
+
+  .choose-file{
+    width: 70%;
+    margin: 0px 15%;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+}

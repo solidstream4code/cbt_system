@@ -1,0 +1,346 @@
+.main-wrapper{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-image: url("../pics/index_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-cont{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(250, 250, 250, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+.header{
+  background-color: green;
+  height: 60px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.text-cont{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.school-name{
+  color: white;
+  font-size: 12pt;
+  font-weight: bolder;
+  font-family: 'Indie Flower', cursive;
+}
+
+.system-name{
+  font-weight: bolder;
+}
+
+.logo-cont{
+  position: relative;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.logo_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.nav{
+  background-color: rgba(0, 70, 0, 0.7);
+  padding: 5px;
+  border-bottom: 2px solid black;
+  margin: 0px;
+}
+
+.nav-nav{
+  float: right;
+}
+
+.test-nav{
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+
+}
+.test-nav:hover{
+  color: black;
+  font-weight: bolder;
+}
+
+.nav-text{
+  color: white;
+  padding-left: 25px;
+  padding-top: 5px;
+  font-size: 14pt;
+}
+
+.body-main-cont{
+  margin: 0px;
+  padding: 15px;
+}
+
+.create_test_section{
+  background-color: rgba(250, 250, 250, 0.8);
+  margin: 10px auto;
+  float: left;
+  width: 100%;
+}
+
+.cont-head{
+  background-color: black;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.head-create-test{
+  display: inline-block;
+  width: 32.75%;
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+
+.active{
+  background-color: rgb(0, 0, 100);
+}
+
+.header-text{
+  color: blue;
+  font-size: 16pt;
+  font-weight: bolder;
+}
+
+.create-test-body{
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.each-test{
+  background-color: rgba(220, 220, 220, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.test-head{
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+
+.test-options{
+  width: 45%;
+  display: inline-block;
+}
+
+.test-button{
+  width: 23%;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.test_title{
+  font-size: 14pt;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.status-active{
+  color: green;
+  font-size: 9pt;
+  margin-left: 20px;
+}
+
+.status-inactive{
+  color: red;
+  font-size: 9pt;
+  margin-left: 20px;
+}
+
+.test_subject{
+  font-size: 11pt;
+  font-weight: bolder;
+}
+
+.test_class{
+  font-size: 10pt;
+  color: rgba(90, 90, 90, 0.8)
+}
+
+.date{
+  font-size: 8pt;
+  font-weight: bolder;
+}
+
+.manage{
+  padding: 5px;
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+}
+
+.manage:hover{
+  border: 2px solid blue;
+}
+
+.no-test{
+  font-size: 14pt;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+}
+
+@media (max-width: 760px){
+  .main-wrapper{
+    padding: 5px;
+  }
+
+
+  .body-main-cont{
+    margin: 0px;
+    padding: 0px;;
+  }
+
+  .body-cont-left{
+    padding: 5px;
+  }
+
+  .col-left{
+    padding-left: 10px;
+  }
+
+  .header{
+    height: 70px;
+    padding: 0px;
+    padding-top: 15px;
+    margin: 0px;
+  }
+
+  .text-cont{
+    margin-left: 3px;
+  }
+
+  .school-name{
+    font-size: 8pt;
+  }
+
+  .system-name{
+    font-size: 9pt;
+  }
+
+  .logo-cont{
+    top: -7px;
+  }
+
+  .nav{
+    padding: 0px;
+    border-bottom: 2px solid black;
+    margin: 0px;
+  }
+
+  .nav-nav{
+    float: right;
+    padding: 0px;
+  }
+
+  .test-nav{
+    width: 48%;
+    padding: 5px;
+    font-size: 8pt;
+    border: 1px solid black;
+  }
+
+  .nav-text{
+    padding-left: 10px;
+    font-size: 9pt;
+  }
+
+  .create_test_section{
+    width: 100%;
+  }
+
+  .head-create-test{
+    width: 32%;
+    padding: 5px;
+    font-size: 9pt;
+  }
+
+  .header-text{
+    font-size: 14pt;
+  }
+
+  .body-create-cont{
+    top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+  }
+
+  .each-test{
+    background-color: rgba(220, 220, 220, 0.8);
+    padding: 10px;
+  }
+
+  .test-head{
+    width: 45%;
+  }
+
+  .test-options{
+    width: 40%;
+  }
+
+  .test-button{
+    width: 15%;
+  }
+
+  .test_title{
+    font-size: 10pt;
+  }
+
+  .status-active{
+    color: green;
+    font-size: 9pt;
+    margin-left: 0px;
+  }
+
+  .status-inactive{
+    color: red;
+    font-size: 9pt;
+    margin-left: 0px;
+  }
+
+  .test_subject{
+    font-size: 9pt;
+    font-weight: bolder;
+  }
+
+  .manage{
+    padding: 5px;
+    font-size: 8pt;
+    margin-top: 10px;
+  }
+
+}

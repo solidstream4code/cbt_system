@@ -1,0 +1,95 @@
+.main-wrapper{
+  background-image: none;
+}
+
+@page {
+  margin: 1cm;
+}
+
+.sub-cont{
+  overflow-y: visible;
+}
+
+.school-name{
+  color: white;
+  font-size: 20pt;
+}
+
+.system-name{
+  font-weight: bolder;
+  font-size: 12pt;
+}
+
+.logo-cont{
+  position: relative;
+  top: -20px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+
+.nav{
+  display: none;
+}
+
+.body-main-cont{
+  margin-top: 15px;
+
+}
+
+.title{
+  color: blue;
+  font-size: 16pt;
+}
+
+.delete-icon{
+  display: none;
+}
+
+.desc-cont{
+  display: inline-block;
+  width: 100%;
+}
+
+.desc-value{
+  display: inline-block;
+}
+
+.status{
+  display: none;
+}
+
+.desc-value-cont{
+  width: 47%;
+  display: inline-block;
+}
+
+.questions-cont{
+  display:none;
+}
+
+.sub-head{
+  color: blue;
+  font-size: 16pt;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.opt-button{
+  display: none;
+}
+
+.scores-cont{
+  padding: 0px;
+  overflow-y: visible;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  top: 240px;
+  width: 100%;
+}
+
+
+.print{
+  display: none;
+}

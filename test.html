@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CBT System: On-going Test</title>
+		<link rel="icon" type="image/jpg" href="pics/title_icon.jpg" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="fonts/font-awesome.css">
+		<link rel="stylesheet" href="fonts/font-awesome.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link href="css/test.css" rel="stylesheet" />
+		<link href="css/modal.css" rel="stylesheet" />
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/submit_test.js"></script>
+		<script src="js/test.js"></script>
+		<script src="js/set_questions.js"></script>
+
+	</head>
+  <body>
+    <div class="container-fliud main-cont">
+      <div class="row header">
+        <div class="col-left col-xs-12 col-sm-9 col-md-9 col-lg-9">
+          <div class="logo-cont">
+            <img src="pics/title_icon.jpg" alt="logo" class="logo_img"/>
+          </div>
+          <div class="school">
+            Maizube Foundation Integrated School
+          </div>
+        </div>
+				<div class="name_cont col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<span class="fa fa-user"></span>
+					<span class="pupil_name"> Garzali Atiku </span>
+				</div>
+      </div>
+      <div class="row body-cont">
+				<div class="body-col-right col-xs-12 col-sm-9 col-md-9 col-lg-9">
+          <fieldset class="row question-cont">
+            <legend class="">
+							<span class="q_no">  </span>
+							<div class="subject_cont">
+								<p class="subject"> </p>
+								<p class="class">  <span class='class_val'></span> </p>
+							</div>
+
+						</legend>
+
+            <div class="question-text">
+
+            </div>
+            <div class="quest-img-cont">
+              <img src="" alt="" class="quest-img">
+            </div>
+						<button class="back"><span class="fa fa-arrow-left"></span> Back </button>
+						<button class="next"> Next <span class="fa fa-arrow-right"></span></button>
+          </fieldset>
+					<div class="row main-option-cont">
+						<div class="option_cont optA col-xs-12 col-sm-6 col-md-6 col-lg-6"> (A). <span class="optionA option_text"> </span> </div>
+						<div class="option_cont optB col-xs-12 col-sm-6 col-md-6 col-lg-6"> (B). <span class="optionB option_text"></span></div>
+						<div class="option_cont optC col-xs-12 col-sm-6 col-md-6 col-lg-6"> (C).  <span class="optionC option_text"> </span></div>
+						<div class="option_cont optD col-xs-12 col-sm-6 col-md-6 col-lg-6"> (D).  <span class="optionD option_text"> </span></div>
+					</div>
+        </div>
+        <div class="body-col-left col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <div class="row upper">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <label for="" class="time-label">Time Remaining</label>
+              <p class="time-value"> </p>
+            </div>
+          </div>
+          <div class="row questions">
+          </div>
+          <div class="submit-cont">
+            <button type="button" class="submit_exam" name="button"> SUBMIT TEST </button>
+          </div>
+        </div>
+				</div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CBT System: Admin</title>
+		<link rel="icon" type="image/jpg" href="../pics/title_icon.jpg" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="../fonts/font-awesome.css">
+		<link rel="stylesheet" href="fonts/font-awesome.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link href="../css/modal.css" rel="stylesheet" />
+    <link href="../css/each_test.css" rel="stylesheet" />
+		<link href="" rel="stylesheet" media="print" class="media-css"/>
+
+
+		<!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+		<script src="../js/modal.js"></script>
+    <script src="../js/test_details.js"></script>
+
+	</head>
+  <body>
+    <div class="main-wrapper container-fluid">
+      <div class="row sub-cont">
+				<div class="row header">
+          <div class="col-left col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <div class="logo-cont">
+              <img src="../pics/title_icon.jpg" alt="logo" class="logo_img"/>
+            </div>
+            <div class="text-cont">
+              <div class="school-name">
+                Maizube Foundation Integrated School
+              </div>
+              <div class="system-name">
+                COMPUTER BASED TESTING SYSTEM
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row nav">
+          <div class="nav-text col-xs-7 col-sm-9 col-md-9 col-lg-9">Questions Administration Portal</div>
+          <div class="nav-nav col-xs-5 col-sm-3 col-md-3 col-lg-3">
+            <a href="admin.html"><div class="create-test-nav test-nav">Create Test</div></a>
+            <a href="list.html"><div class="view-test-nav test-nav">View Tests</div></a>
+          </div>
+        </div>
+
+        <div class="row body-main-cont">
+          <div class="body-head-cont">
+						<div>
+            	<div class="title">Cpt_pry4_2019</div>
+							<div class="fa fa-trash delete-icon"> <span class="delete-test">Delete Test</span></div>
+						</div>
+            <div class="desc-cont">
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'> Subject: </label>
+                    <div class="subject desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'> Class: </label>
+                  <div class="class desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'>Total Questions</label>
+                  <div class="total_quest desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'>Date Created</label>
+                  <div class="date desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'>Per Pupil: </label>
+                  <div class="quest_per_pupil desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'>No participants</label>
+                  <div class="no_participant desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'>Duration</label>
+                  <div class="duration desc-value"></div>
+                </div>
+                <div class="desc-value-cont">
+                  <label for="" class='desc-label'>Status</label>
+                  <div class="test-status desc-value"></div>
+                </div>
+            </div>
+            <div class="status">
+              <div class="status-cont">
+                <p class="status-fixed-text"> Currently </p>
+                <p class="test-status"></p>
+                <button class="button-toggle-status"> Activate </button>
+              </div>
+            </div>
+          </div>
+
+          <div class=" row body-body-cont">
+            <div class="questions-cont col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <div class="sub-head"> Questions </div>
+
+                <div class="body-quest-cont">
+
+                </div>
+                <button class="print print-question">Print Question</button>
+            </div>
+            <div class="scores-cont col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <div class="sub-head"> Scores </div>
+                <div class="score-cont">
+
+                </div>
+                <button class="print print-scores">Print Scores</button>
+            </div>
+          </div>
+          <div class="edit-cont">
+            <div class="edit-sub">
+              <div class="edit-head">
+                <div class="edit-head-text"> Edit Question <span class='edit-q-no'> 5 </span></div>
+                <span class="close fa fa-close"></span>
+              </div>
+              <div class="each-edit">
+                <label for="" class="each-label"> Question </label>
+                <textarea class='edit-input edit-question' value=""></textarea>
+              </div>
+
+              <div class="each-edit">
+                <label for="" class="each-label"> Option A </label>
+                <input type="text" class='edit-input edit-a' value="" />
+              </div>
+
+              <div class="each-edit">
+                <label for="" class="each-label"> Option B </label>
+                <input type="text" class='edit-input edit-b' value="" />
+              </div>
+
+              <div class="each-edit">
+                <label for="" class="each-label"> Option C </label>
+                <input type="text" class='edit-input edit-c' value="" />
+              </div>
+
+              <div class="each-edit">
+                <label for="" class="each-label"> Option B </label>
+                <input type="text" class='edit-input edit-d' value="" />
+              </div>
+
+              <div class="each-edit">
+                <div class="each-img-cont">
+                  <img class='each-img' src="../pics/index_bg.jpg" alt="no"/>
+                </div>
+                <button class='edit-input edit-file'> Select Image </button>
+                <input type="file" class='edit-input edit-file-field' value="" accept=".jpg" style="visibility:hidden"/>
+              </div>
+              <button class="submit-edit"> Submit </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

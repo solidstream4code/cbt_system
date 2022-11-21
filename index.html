@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CBT System</title>
+		<link rel="icon" type="image/jpg" href="pics/title_icon.jpg" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- css -->
+		<link rel="stylesheet" href="fonts/font-awesome.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/login.css" rel="stylesheet" />
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+		<script src="js/pupil_login.js"></script>
+	</head>
+  <body>
+    <div class="container-fluid main-cont">
+      <div class="row sub-cont">
+        <div class="inner-wrapper">
+          <div class="logo-cont">
+            <img src="pics/title_icon.jpg" class="logo_img" alt="School logo">
+          </div>
+          <div class="head-wrapper">
+            <p class='school'>Maizube Foundation Integrated School</p>
+            <p class='system_name'>COMPUTER BASED TESTING SYSTEM</p>
+          </div>
+          <div class="form-wrapper">
+						<div class="login_wrapper">
+								<div class="message">
+
+								</div>
+		            <div class="each-wrapper">
+		              <label for="name" class="form_label">Name</label>
+		              <input type="text" name="" class="form-input pupil_name" id="pupil_name" value="">
+		            </div>
+		            <div class="each-wrapper">
+		              <label for="exam_no" class="form_label">Eamination Number</label>
+		              <input type="text" name="" class="form-input exam_no" id="exam_no" value="">
+		            </div>
+		            <input type="submit" name="submit" value="TAKE EXAM" class='login_button'>
+						</div>
+						</div>
+						<footer>
+							&copy <img src="pics/title_icon.jpg" class="copy_img"/> Maizube Foundation Integrated School. All rights reserved <span id="year"></span>
+							<script>
+								let date = new Date();
+								let year = date.getFullYear()
+								document.getElementById("year").innerHTML = year
+							</script>
+						</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
